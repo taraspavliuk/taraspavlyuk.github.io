@@ -1,0 +1,576 @@
+@font-face {
+	font-family:"LeagueGothic";
+	src:url("../fonts/League_Gothic.eot?") format("eot"),
+	url("../fonts/League_Gothic.woff") format("woff"),
+	url("../fonts/League_Gothic.ttf") format("truetype"),
+	url("../fonts/League_Gothic.svg#LeagueGothic") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Regular-webfont.eot');
+	src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+	url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+	url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Open_SansBold';
+	src: url('../fonts/OpenSans-Bold-webfont.eot');
+	src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+	url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+	url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	background-color: #f9f9f9;
+}
+b{
+	font-weight: bold;
+}
+.clearfix:after{
+	clear: both;
+	content: '';
+	display: block;
+}
+
+/*HEADER*/
+header{
+	position: relative;
+	overflow: hidden;
+	background-image: url("../img/header-bg.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat:no-repeat;
+	font-family: 'LeagueGothic', Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	padding-bottom: 100px;
+}
+.wrapper{
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 960px;
+}
+.navigation{
+	position: relative;
+}
+.logo{
+	margin-bottom: 40px;
+}
+.logo img{
+	margin: 0 auto;
+}
+.logo img:hover{
+	transition: 0.8s;
+	transform: scale(1.2);
+}
+.top-menu{
+	position: relative;
+	float: right;
+	width: 75%;
+	text-align: right;
+}
+.top-menu li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 5%;
+	box-sizing: border-box;
+	border-bottom: 2px solid transparent;
+}
+.top-menu-first-item{
+	display: block;
+}
+.top-menu li:first-child{
+	margin-left: 0px;
+}
+.top-menu a{
+	text-decoration: none;
+	font-family: "LeagueGothic","Helvetica Neue","Helvetica","Arial";
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+	height: 100%;
+	color: #fff;
+	line-height: 30px;
+	font-size: 24px;
+}
+.top-menu  a:hover{
+	color: #edbfff;
+	border-bottom: 2px solid #edbfff; 
+}
+
+/*SLIDER*/
+.slider {
+	background-color: rgba(0, 0, 0, 0.2);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.slider-info{
+	position: relative;
+	padding: 0 20px;
+
+}
+.slider-text{
+	text-align: center;
+	padding: 100px 0 80px;
+}
+.slider-image{
+	display: none;
+}
+.slider-text h2{
+	font-size: 60px;
+	line-height: 60px;
+	color: #fff;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+}
+.slider-text h3{
+	font-size: 32px;
+	color: rgb(237, 191, 255);
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+	overflow: hidden;
+	white-space: nowrap;
+}
+.slider-text p{
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+}
+.slider-button ul{
+	text-align: center;
+}
+.slider-button li{
+	display: inline-block;
+	width: 19px;
+	height: 17px;
+	margin-left: 5px;
+	background-image: url("../img/slider-button.png");
+	background-repeat: no-repeat;
+}
+.slider-button li:first-child{
+	margin-left: 0px;
+}
+.slider-button a{
+	display: block;
+	height: 100%;
+}
+.slider-button li:hover{
+	transform: scale(1.5);
+	background-image: url("../img/slider-button.png");
+	background-position: 0px -19px;
+}
+.slider-arrow-left{
+	position: absolute;
+	top: 120px;
+	left: 0;
+	right: initial;
+	width: 23px;
+	height: 36px;
+	background-image: url("../img/arrow-left.png");
+	background-repeat: no-repeat;
+}
+.slider-arrow-left:hover{
+	transition: 0.5s;
+	transform: scale(1.2);
+}
+.slider-arrow-left a{
+	display: block;
+	height: 100%;
+}
+.slider-arrow-right{
+	position: absolute;
+	top: 120px;
+	right: 0;
+	left: initial;
+	width: 23px;
+	height: 36px;
+	background-image: url("../img/arrow-right.png");
+	background-repeat: no-repeat;
+}
+.slider-arrow-right:hover{
+	transition: 0.5s;
+	transform: scale(1.2);
+}
+.slider-arrow-right a{
+	display: block;
+	height: 100%;
+}
+
+/*BANNER*/
+.pie{
+	behavior: url(css/PIE.htc);
+}
+.banner{
+	background: rgba(116,80,131,1);
+	background: -moz-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(116,80,131,1)), color-stop(100%, rgba(50,37,57,1)));
+	background: -webkit-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+	background: -o-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+	background: -ms-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+	background: linear-gradient(to bottom, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745083', endColorstr='#322539', GradientType=0 );
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-top: 1px solid #33253a;
+	border-bottom: 1px solid #0d151b;
+	box-sizing: border-box;
+	-webkit-box-shadow: inset 0px -1px 0px 0px rgba(29,47,55,1);
+	-moz-box-shadow: inset 0px -1px 0px 0px rgba(29,47,55,1);
+	box-shadow: inset 0px -1px 0px 0px rgba(29,47,55,1);
+	padding: 75px 0 50px;
+}
+.banner-article {
+	position: relative;
+	margin: 0 auto 30px;
+	padding-left: 50px;
+}
+.banner-text{
+	position: relative;
+}
+.banner-text h4{
+	font-family: "LeagueGothic","Helvetica Neue","Helvetica","Arial";
+	font-size: 30px;
+	line-height: 30px;
+	letter-spacing: -0.1px;
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 1px 2px 1px rgba(15, 21, 24, 1);
+	margin-bottom: 8px;
+}
+.banner-text:before{
+	content: '';
+	background-repeat: no-repeat;
+	position: absolute;
+	left: -50px;
+	z-index: 4;
+	height: 29px;
+	width: 28px;
+}
+.icon-key:before{
+	background-image: url("../img/icon-key.png");
+}
+.icon-option:before{  
+	background-image: url("../img/icon-option.png");
+}
+.icon-music:before{
+	background-image: url("../img/icon-music.png");
+}
+.banner-text p{
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.4px;
+	color: #fff;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	text-shadow: 1px 2px 1px rgba(15, 21, 24, 1);
+}
+.banner-button a{
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 18px;
+	line-height: 24px;
+	text-align: right;
+	font-family: 'LeagueGothic', Arial, Helvetica, sans-serif;
+	text-shadow: 1px 2px 1px rgba(15, 21, 24, 1);
+	margin-top: 22px;
+}
+.banner-button a:hover{
+	transform: scaleY(1.2);
+	text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+/*NEWS*/
+.news{
+	position: relative;
+	box-sizing: border-box;
+	padding: 70px 0 65px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-box-shadow: inset 0px -1px 0px 0px rgba(230,230,230,1);
+	-moz-box-shadow: inset 0px -1px 0px 0px rgba(230,230,230,1);
+	box-shadow: inset 0px -1px 0px 0px rgba(230,230,230,1);
+}
+.news:before{
+	position: absolute;
+	content: '';
+	display: block;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 16px;
+	background-image: url("../img/news-shadow.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.news-box-content{
+	position: relative;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+	padding: 25px 40px 30px 30px;
+	margin-left: 25px;
+}
+.news-box-content:after{
+	content: '';
+	display: block;
+	background-image: url("../img/news-box-arrow.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: -24px;
+	right: 40px;
+	z-index: 4;
+	height: 24px;
+	width: 24px;
+}
+.news-author:before{
+	content: '';
+	background-image: url("../img/author.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 20px;
+	left: -25px;
+	z-index: 4;
+	height: 50px;
+	width: 50px;
+}
+.news-box-content h4{
+	font-size: 24px;
+	line-height: 26px;
+	color: #454545;
+	text-transform: uppercase;
+	font-family: 'LeagueGothic', Arial, Helvetica, sans-serif;
+}
+.colortext{
+	color: #edbfff;
+}
+.news-box-content p{
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.4px;
+	color: #454545;
+}
+.news-buttons{
+	padding: 25px 0;
+	text-align: center;
+}
+.news-buttons li{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	background-image: url("../img/news-button.png");
+	background-repeat: no-repeat;
+}
+.news-buttons a{
+	display: block;
+	height: 100%;
+}
+.news-buttons li:hover{
+	background-image: url("../img/news-button.png");
+	transform: scale(1.5);
+	background-position: 0px -22px;
+}
+.news-update-box{
+	box-sizing: border-box;
+	padding: 25px 0;
+}
+.news-update-title h4{
+	font-size: 28px;
+	line-height: 24px;
+	color: #454545;
+	text-transform: uppercase;
+	font-family: "LeagueGothic","Helvetica Neue","Helvetica","Arial";
+	margin-bottom: 24px;
+}
+.news-update-post{
+	position: relative;
+	padding-left: 65px;
+	margin-bottom: 18px;
+}
+.news-update-article h5{
+	font-size: 16px;
+	line-height: 24px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #454545;
+	font-family: 'Open_SansBold', Arial, Helvetica, sans-serif;
+}
+.news-update-post:before{
+	content: '';
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	height: 49px;
+	width: 49px;
+}
+.update-icon-1:before{
+	background-image: url("../img/update_1.png");
+}
+.update-icon-2:before{
+	background-image: url("../img/update_2.png");
+}
+.update-icon-3:before{
+	background-image: url("../img/update_3.png");
+}
+.news-update-article p{
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: -0.4px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #454545;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.news-update-button{
+	text-align: right;
+	padding: 0 20px;
+}
+.news-update-button a{
+	display: block;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: "LeagueGothic","Helvetica Neue","Helvetica","Arial";
+	color: #454545;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.news-update-button a:hover{
+	transform: scaleY(1.2); 
+	text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+}
+
+/*PARTNERS*/
+.partners{
+	border-bottom: 1px solid #fff;
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(216,216,216,1);
+	-moz-box-shadow: 0px 1px 0px 0px rgba(216,216,216,1);
+	padding: 25px 0 50px;
+}
+.partners-logo li{
+	float: left;
+	padding: 25px;
+	box-sizing: border-box;
+	text-align: center;
+	width: 50%;
+}
+.partners-logo a{
+	display: block;
+	height: 100%;
+}
+.partners-logo a:hover{
+	transition: 1.5s;
+	/*transform: rotate(360deg);*/
+	transform: scale(1.5);
+}
+
+
+/*BOTTOM-BANNER*/
+.bottom-baner{
+	background-color: #ececec;
+	border-top: 1px solid #d8d8d8;
+	box-sizing: border-box;
+	padding: 100px 0; 
+}
+.bottom-baner-article{
+	margin-bottom: 60px;
+}
+.bottom-baner-article a{
+	display: block;
+	margin-bottom: 10px;
+}
+.bottom-baner-article h4{
+	font-size: 30px;
+	line-height: 24px;
+	color: #454545;
+	text-transform: uppercase;
+	font-family: "LeagueGothic","Helvetica Neue","Helvetica","Arial";
+	margin-bottom: 12px;
+}
+.bottom-baner-article span{
+	font-size: 14px;
+	line-height: 34px;
+	color: #c5c5c5;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	text-shadow: 1px 2px 1px rgba(255, 255, 255, 1);
+}
+.bottom-baner-article p{
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #787878;
+	letter-spacing: -0.4px;
+	text-shadow: 1px 2px 1px rgba(255, 255, 255, 1);
+}
+/*FOOTER*/
+footer{
+	box-sizing: border-box;
+	background-image: url("../img/footer-bg.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat:no-repeat;
+	padding: 50px 0;
+}
+.bottom-navigation{
+	margin-bottom: 40px;
+}
+.bottom-menu{
+	text-align: center;
+	list-style: none;
+}
+.bottom-menu li{
+	display: inline;
+	margin-left: 20px;
+	padding-bottom: 5px;
+}
+.bottom-menu li:first-child {
+	margin-left: 0;
+}
+.bottom-menu a{
+	text-decoration: none;
+	font-family: "LeagueGothic","Helvetica Neue","Helvetica","Arial";
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+	color: #fff;
+	line-height: 20px;
+	font-size: 20px;
+	height: 100%;
+}
+.bottom-menu a:hover{
+	color: #edbfff;
+	transition: 0.3s;
+	border-bottom: 2px solid #edbfff;
+}
+.footer-copyright{
+	text-align: center;
+}
+.footer-copyright p{
+	display: block;
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-size: 12px;
+	line-height: 24px;
+	text-align: center;
+	text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.footer-copyright a{
+	text-decoration: none;
+	color: #fff;
+}
+.footer-copyright a:hover{
+	transition: 0.4s;
+	text-decoration: underline;
+	color: #edbfff;
+}
